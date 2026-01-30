@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>FOUNTAIN PUNYA BAYU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero teal">
+    <h1>FOUNTAIN</h1>
+</section>
+
+<section class="sub-hero pink">
+    <p>Ice Cream dan Restaurant</p>
+</section>
+
+<nav class="menu cream">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('produk')">Produk</button>
+    <button onclick="showSection('profil')">Profil</button>
+    <button onclick="showSection('bukutamu')">Buku Tamu</button>
+</nav>
+
+<section id="home" class="content active">
+    <h2>Selamat Datang di Fountain</h2>
+    <p>
+        Fountain adalah tempat berkumpulnya rasa, suasana, dan kebahagiaan.
+        Kami menghadirkan ice cream berkualitas tinggi dengan bahan pilihan,
+        dipadukan dengan menu restaurant modern yang cocok untuk semua kalangan.
+        Fountain bukan sekadar tempat makan, tetapi destinasi untuk menciptakan
+        momen berharga bersama keluarga, teman, dan orang terkasih.
+        Dengan konsep klasik-modern, Fountain memberikan pengalaman kuliner
+        yang nyaman, estetik, dan penuh cita rasa.
+    </p>
+</section>
+
+<section id="produk" class="content">
+    <h2>Katalog Produk</h2>
+
+    <div class="popular-box">
+        <h3>Produk Populer</h3>
+        <img id="popularImg" src="SUPIGA1.jpg">
+        <p id="popularName">SUP IGA SPESIAL</p>
+    </div>
+
+    <div class="product-grid">
+        <div class="card">
+            <img class="slide p1" src="OREOCRAMBS1.jpg">
+            <p>OREO CRUMBS</p>
+            <p><s>Rp 37.000</s></p>
+            <span class="price">Rp 27.000</span>
+            <button>Beli</button><br>
+            <a href="https://www.instagram.com/p/DSuD-LMkVhV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Lihat selengkapnya disini</a>
+            <p> APABILA BARANG TIDAK SESUAI DAPAT DI KEMBALIKAN</p>
+        </div>
+
+        <div class="card">
+            <img class="slide p2" src="NASGOR1.jpg">
+            <h4>NASI GORENG JUMBO</h4>
+            <span class="price">Rp 35.000</span>
+            <button>Beli</button><br>
+            <a href="https://www.instagram.com/p/DO0AmlZESa_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Lihat selengkapnya disini</a>
+            <p> APABILA BARANG TIDAK SESUAI DAPAT DI KEMBALIKAN</p>
+        </div>
+
+        <div class="card">
+            <img class="slide p3" src="GRASSJELLY1.jpg">
+            <h4>GRASS JELLY MILO FLOAT</h4>
+            <span class="price">Rp 26.000</span>
+            <button>Beli</button><br>
+            <a href="https://www.instagram.com/p/Cn07QceBx7U/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank">Lihat selengkapnya disini</a>
+            <div class="notif">APABILA BARANG TIDAK SESUAI DAPAT DI KEMBALIKAN</div>
+        </div>
+
+        <div class="card">
+            <img class="slide p4" src="SUPIGA1.jpg">
+            <h4>SUP IGA SPECIAL</h4>
+            <span class="price">Rp 40.000</span>
+            <button>Beli</button><br>
+            <a href="https://www.instagram.com/p/C5223A6hzhN/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank">Lihat selengkapnya disini</a>
+            <p> APABILA BARANG TIDAK SESUAI DAPAT DI KEMBALIKAN</p>
+        </div>
+
+        <div class="card">
+            <img class="slide p5" src="CAKEICE1.jpg">
+            <h4>CAKE & ICE cream</h4>
+            <span class="price">Rp 25.000</span>
+            <button>Beli</button><br>
+            <a href="https://www.instagram.com/reel/DOVCk6hkbdZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Lihat selengkapnya disini</a>
+            <p> APABILA BARANG TIDAK SESUAI DAPAT DI KEMBALIKAN</p>
+        </div>
+
+        <div class="card">
+            <img class="slide p6" src="SPG1.jpg">
+            <h4>SPAGHETTI BOLOGNESE</h4>
+            <span class="price">Rp 30.000</span>
+            <button>Beli</button><br>
+            <a href="https://www.instagram.com/p/CtOJU12hUbR/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank">Lihat selengkapnya disini</a>
+            <p> APABILA BARANG TIDAK SESUAI DAPAT DI KEMBALIKAN</p>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h2> Keranjang Belanja </h2>
+        <ul id="cartlist"></ul>
+        <p>
+            <strong>Total : Rp <span id="total">0</span> </strong>
+        </p>
+    </div>
+
+    <div class="note"> Selamat Berbelanja</div>
+
+</section>
+
+<section id="profil" class="content">
+    <h2>Tentang Fountain</h2>
+    <p>
+        Fountain merupakan brand ice cream & restaurant yang mengusung konsep
+        klasik elegan dengan sentuhan modern. Terinspirasi dari restoran
+        ice cream legendaris, Fountain hadir untuk memberikan kualitas rasa
+        terbaik, pelayanan ramah, dan suasana yang hangat bagi setiap pengunjung.
+        Komitmen kami adalah menyajikan produk premium dengan harga yang ramah.
+    </p>
+</section>
+
+<section id="bukutamu" class="content">
+    <h2>Buku Tamu</h2>
+    <form class="guest-form">
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan & Kesan" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
