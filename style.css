@@ -161,17 +161,78 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+    /* mobile styles: adjust spacing, font sizes, and layouts for phones */
+    .hero h1 {
+        font-size: 32px;
+        padding: 24px 0;
+    }
+
+    .sub-hero p {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    .menu {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+    .menu button {
+        margin: 6px 6px;
+        padding: 8px 14px;
+        font-size: 16px;
+        border-radius: 14px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
     .product-grid {
         grid-template-columns: 1fr;
+        gap: 14px;
     }
 
-    .hero h1 {
-        font-size: 42px;
+    .card {
+        padding: 18px;
     }
 
-    .menu button {
-        margin: 5px;
-        width: 80%;
+    .card img {
+        height: 180px;
+    }
+
+    .notif { font-size: 12px; }
+
+    .note { font-size: 18px; }
+
+    .price { font-size: 18px; }
+    .price a { padding: 10px; }
+
+    .card button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .popular-box {
+        padding: 16px;
+    }
+    .popular-box img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .guest-form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .guest-form input,
+    .guest-form textarea {
+        font-size: 16px;
     }
 }
