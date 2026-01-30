@@ -69,9 +69,26 @@ body {
 }
 
 .card {
+    position: relative;
     background: white;
     padding: 30px;
     border-radius: 15px;
+}
+
+.card .diskon {
+    position: absolute;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card h4{
+    color: black;
 }
 
 .card img {

@@ -47,8 +47,11 @@
 
     <div class="product-grid">
         <div class="card">
+            <div class="diskon">
+                <span>20% OFF</span>
+            </div>
             <img class="slide p1" src="OREOCRAMBS1.jpg">
-            <p>OREO CRUMBS</p>
+            <h4>OREO CRUMBS</h4>
             <p><s>Rp 37.000</s></p>
             <span class="price">Rp 27.000</span>
             <button>Beli</button><br>
@@ -57,6 +60,9 @@
         </div>
 
         <div class="card">
+             <div class="diskon">
+                <span>20% OFF</span>
+            </div>
             <img class="slide p2" src="NASGOR1.jpg">
             <h4>NASI GORENG JUMBO</h4>
             <span class="price">Rp 35.000</span>
@@ -131,7 +137,8 @@
         <input type="text" placeholder="Nama Anda" required>
         <input type="email" placeholder="Email" required>
         <textarea placeholder="Pesan & Kesan" required></textarea>
-        <button type="submit">Kirim Pesan</button>
+        <a href="https://wa.me/+6281244303268?" onclick="return confirm('Kirim pesan ke WhatsApp?')">kirim pesan</a>
+        <button type="button" class="btn">Base class</button>
     </form>
 </section>
 
